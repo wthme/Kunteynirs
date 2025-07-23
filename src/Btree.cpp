@@ -86,40 +86,6 @@ root = new_root;
 
 }
 
-
-// template <class T,class V>
-// void  btreemap<T,V>::add (const T& add_key , const V & add_value) {
-//         T adding_key = add_key;
-//         V adding_value = add_value;
-
-//         if (size() == 0){
-//         bmap->root->key = adding_key;
-//         bmap->root->value = adding_value;
-//         mapsize++;}
-
-//         else {
-//         iter * adding_pos;
-//         adding_pos = bmap->root->add_pos(adding_key);
-//         if (adding_key == **adding_pos){
-//           std::cout << "zamena!!1\n";
-//           adding_pos->value = adding_value;
-//         }
-//         else if (adding_key < **adding_pos){
-//         iter * new_node = new typename btreemap<T ,V>::iterator(adding_key, adding_value);
-//         adding_pos->ldbond(new_node);
-//         mapsize++;
-//         }
-//         else if (adding_key > **adding_pos){
-//         iter * new_node = new typename btreemap<T ,V>::iterator(adding_key ,adding_value);
-//         adding_pos->rdbond(new_node);
-//         mapsize++;}
-//         }
-// }
-
-
-
-
-
 template<class T>
 bool  Btree <T> :: iterator :: status_check(){
 bool assert  = false;
@@ -318,22 +284,8 @@ right = other_node->right;
 }
                  
 template class Btree<int>;
-// template class Btree<std::string>;
-
 template class btreemap<int,int>;
 template class btreemap<int,std::string>;
 template class btreemap<std::string ,int>;
 template class btreemap<int,char>;
 template class btreemap<char,int>;
-// template class Btree<char>;
-
-
-
-
-// int main(){
-
-//   Btree<int> b;
-
-
-//   return 0;
-// }

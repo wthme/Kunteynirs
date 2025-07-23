@@ -123,14 +123,6 @@ const T &s21::Queue<T>::back() {
     return res;
 }
 
-// template <typename T>
-// void s21::Queue<T>::print() {
-//   while (size) {
-//     std::cout << this->front();
-//     this->pop();
-//   }
-// }
-
 template class s21::Queue<int>;  // инстанцирование шаблонов для тестов
 template class s21::Queue<double>;
 template class s21::Queue<float>;

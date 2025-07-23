@@ -21,18 +21,12 @@ class list {
       *this = *next;
       return *this;
     };
-    // ListIterator& operator++(int) {
-    //   *this = *next;
-    //   return *this;
-    // };
+
     ListIterator& operator--() {
       *this = *prev;
       return *this;
     };
-    // ListIterator& operator--(int) {
-    //   *this = *prev;
-    //   return *this;
-    // };
+
     bool operator==(ListIterator it) { return (data == it.data); };
     bool operator!=(ListIterator it) { return data != it.data; };
     void rbond(ListIterator* right) {
@@ -60,9 +54,6 @@ class list {
   list(list<T>& copyng_list);
   list(list<T>&& mooving_list);
   ~list();
-
-  // list<T>& operator<<(list<T>* dedovskiy_metod) { return *dedovskiy_metod; };
-
   list<T>& operator=(list<T>&& mooving_list);
   const T& front() { return root->data; };
   const T& back() { return lend->prev->data; };

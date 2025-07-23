@@ -1,8 +1,6 @@
 #include <gmock/gmock.h>
 #include <gtest/gtest.h>
-
 #include <queue>
-
 #include "queue.h"
 #include "vector.h"
 

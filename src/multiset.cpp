@@ -313,37 +313,3 @@ void multiset_test_foo(s21::multiset<T> &a, std::multiset<T> &a_eth) {
   iter_eth = a_eth.end();
    std::cout << a.size() << "  "  << a_eth.size();
 }
-
-
-
-
-// int main(){
-
-// // s21::multiset<int> s;
-
-// // s.add(25);
-// // s.add(17);
-// // s.add(17);
-// // s.add(68);
-// // s.add(34);
-
-// // // std::cout << **s.begin() << std::endl;
-
-
-// // for (auto it = *s.begin(); it != *s.end(); ++it)
-// //     std::cout << *it << std::endl;
-
-// // std::cout << **s.root<< std::endl;
-
-//   s21::multiset<int> a{ 2,  2, 3 ,1 ,1};
-//   // Assert
-
-// auto t = a.equal_range(1);
-
-// //   for (auto it = *a.begin(); it != *a.end(); ++it)
-// //     std::cout << *it << std::endl;
-
-
-// return 0;
-// }
-

@@ -1,5 +1,4 @@
 #include "stack.h"
-
 #include <initializer_list>
 
 template <typename T>

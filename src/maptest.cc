@@ -2,12 +2,6 @@
 #include <map>
 #include "map.h"
 #include <iostream>
-// #include "Btree.h"
-
-
-// #include "../s21_containers.h"
-// #include "../s21_containersplus.h"
-// #include "../list.h"
 
 template <typename T, typename V>
 void map_test_foo(s21::map<T, V> &a, std::map<T, V> &a_eth) {
@@ -18,8 +12,6 @@ void map_test_foo(s21::map<T, V> &a, std::map<T, V> &a_eth) {
     ASSERT_EQ(iter.value, iter_eth->second);
   }
 }
-
-
 
 TEST(map_default_constructor, 1) {
   // Arrange
@@ -440,27 +432,6 @@ TEST(map_erase, 1) {
   a_eth.erase(iter_eth);
   map_test_foo(a, a_eth);
 }
-
-
-// TEST(map_erase, 3) {
-//   // Arrange
-//   s21::map<int, std::string> a{std::pair<int, std::string>(1, "1"),
-//                                std::pair<int, std::string>(2, "2"),
-//                                std::pair<int, std::string>(3, "3")};
-//   auto iter = a.begin();
-//   ++iter;
-//   // Act
-//   a.erase(iter);
-//   // Assert
-//   std::map<int, std::string> a_eth{std::pair<int, std::string>(1, "1"),
-//                                    std::pair<int, std::string>(2, "2"),
-//                                    std::pair<int, std::string>(3, "3")};
-//   auto iter_eth = a_eth.begin();
-//   ++iter_eth;
-//   a_eth.erase(iter_eth);
-//   map_test_foo(a, a_eth);
-// }
-
 
 TEST(map_swap, 1) {
   // Arrange

@@ -64,9 +64,6 @@ s21::vector<T>& s21::vector<T>::operator=(s21::vector<T>&& mooved_vector) {
 
   mooved_vector.~vector();
 
-  // s21::vector<T> * new_vector = new s21::vector<T>(std::move(mooved_vector));
-  // s21::vector<T> & ref_on_vec = * new_vector;
-
   return *this;
 }
 
@@ -228,10 +225,3 @@ template class s21::vector<double>;
 template class s21::vector<float>;
 template class s21::vector<char>;
 template class s21::vector<std::string>;
-// template class s21::vector<std::pair < Btree<int>::iterator, bool> >;
-
-
-
-
-
-

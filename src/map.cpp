@@ -352,54 +352,8 @@ iter * adding_pos = root->add_pos(keykey);
 return contains;
 }
 
-
 template class s21::map<int,int>;
 template class s21::map<int,char>;
 template class s21::map<char,int>;
 template class s21::map<int,std::string>;
 template class s21::map<std::string,int>;
-
-
-
-// template <typename T, typename V>
-// void map_test_foo(s21::map<T, V> &a, std::map <T, V> &a_eth) {
-//   auto iter = *a.begin();
-//   auto iter_eth = a_eth.begin();
-//   for (; iter != *a.end() && iter_eth != a_eth.end(); ++iter, ++iter_eth) {
-//     std::cout << iter.key << "  " <<  iter_eth->first <<  std::endl;
-//     std::cout << iter.value << "  " <<  iter_eth->second <<  std::endl;
-//   }
-//     std::cout << a.size() << "  " <<  a_eth.size();
-// }
-
-
-// int main(){
-
-// s21::map<int,std::string> b;
-
-// b.add(1 , "tratata");
-// b.add(2 , "tratata");
-
-//   // s21::map<int, std::string> b{std::pair<int, std::string>(1, "1"),
-//   //                              std::pair<int, std::string>(2, "2"),
-//   //                              std::pair<int, std::string>(3, "3")};
-//   // Act
-//   // s21::map<int, std::string> a(std::move(b));
-//   // Assert
-//   // std::map<int, std::string> b_eth{std::pair<int, std::string>(1, "1"),
-//   //                                  std::pair<int, std::string>(2, "2"),
-//   //                                  std::pair<int, std::string>(3, "3")};
-//   // std::map<int, std::string> a_eth(std::move(b_eth));
-//   // map_test_foo(a, a_eth);
-//   // map_test_foo(b, b_eth);
-
-// // map.add(3,5);
-// // map.add(1,4);
-// // map.add(1,8);
-
-// // for ( auto it = *b.begin(); it != *b.end(); ++it)
-// //     std::cout << b.begin()->value << "  " << *it << std::endl;
-
-// //  std::cout << map[2] << "  " << "sgsg"<< std::endl;
-// return 0;
-// }

@@ -50,4 +50,3 @@ map:
 
 mtest:
 	g++ maptest.cc map.cpp -o test -lgtest -pthread -lgmock -std=c++17
-

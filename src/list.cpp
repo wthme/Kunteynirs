@@ -1,11 +1,8 @@
 #include "list.h"
-
 #include <signal.h>
-
 #include <initializer_list>
 #include <list>
-// template <typename T>
-// using  iter = typename s21::list<T> :: ListIterator;
+
 
 template <class T>
 s21::list<T>::list() {
@@ -291,8 +288,7 @@ void s21::list<T>::ListIterator::stealth() {
   left->rbond(right);
 }
 
-template class s21::list<int>;  // для тестов заготовка для компилятора или //
-                                // линковщика хз
+template class s21::list<int>; 
 template class s21::list<double>;
 template class s21::list<float>;
 template class s21::list<char>;

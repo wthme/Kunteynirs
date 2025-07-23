@@ -303,32 +303,3 @@ return contains;
 template class s21::set<int>;
 template class s21::set<char>;
 template class s21::set<std::string>;
-
-
-// template <typename T>
-// void set_test_foo(s21::set<T> &a, std::set<T> &a_eth) {
-//   auto iter = a.begin();
-//   auto iter_eth = a_eth.begin();
-//   for (; iter != a.end() && iter_eth != a_eth.end(); ++iter, ++iter_eth) {
-//     std::cout << *iter << "  " << *iter_eth << std::endl;
-//   }
-// //   std::cout << a.size() << " sas size " <<  a_eth.size();
-// }
-
-
-
-// int main (){
-//   s21::set<int> a{1, 2, 3};
-//   s21::set<int> b{2, 8, 5, 2, 4, 1, 3, 7, 6, 11, 9, 12, 10, 2};
-//   // Act
-//   a.merge(b);
-
-//   for ( auto iter = *a.begin(); iter != *a.end(); ++iter){
-//     std::cout << *iter << "  " << std::endl;}
-
-// auto sas = a.contains(88);
-
-// // std::cout << sas << "  " << std::endl;
-
-// return 0;
-// }

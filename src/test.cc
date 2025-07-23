@@ -4357,27 +4357,6 @@ TEST(map_erase, 1) {
   map_test_foo(a, a_eth);
 }
 
-
-// TEST(map_erase, 3) {
-//   // Arrange
-//   s21::map<int, std::string> a{std::pair<int, std::string>(1, "1"),
-//                                std::pair<int, std::string>(2, "2"),
-//                                std::pair<int, std::string>(3, "3")};
-//   auto iter = a.begin();
-//   ++iter;
-//   // Act
-//   a.erase(iter);
-//   // Assert
-//   std::map<int, std::string> a_eth{std::pair<int, std::string>(1, "1"),
-//                                    std::pair<int, std::string>(2, "2"),
-//                                    std::pair<int, std::string>(3, "3")};
-//   auto iter_eth = a_eth.begin();
-//   ++iter_eth;
-//   a_eth.erase(iter_eth);
-//   map_test_foo(a, a_eth);
-// }
-
-
 TEST(map_swap, 1) {
   // Arrange
   s21::map<int, std::string> a{std::pair<int, std::string>(1, "1"),
